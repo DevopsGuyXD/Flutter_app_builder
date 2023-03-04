@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Boost msme app builder</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  </head>
+  <body>
+    <div class="container">
+
+      <br>
+      <div style="text-align: center;"><img src="https://s3-ap-southeast-1.amazonaws.com/withfloats-content-cdn/PartnerImages/aec/AECLogo.jpg" /></div>
+      <br>
+
+      <form action="/api/bizapp/create" method="POST" enctype="multipart/form-data">
+
+        <div class="form-group">
+          <input type="text" class="form-control" id="APPNAME" placeholder="APPNAME" name="APPNAME" required>
+        </div>
+
+        <div class="form-group">
+          <input type="text" class="form-control" id="FPTAG" placeholder="FPTAG" name="FPTAG" required>
+        </div>
+
+        <div class="form-group">
+          <input type="text" class="form-control" id="FPROOTALIASURI" placeholder="FPROOTALIASURI" name="FPROOTALIASURI" required>
+        </div>
+
+        <div class="form-group">
+          <input type="text" class="form-control" id="FPLOGOURI" placeholder="FPLOGOURI"  name="FPLOGOURI" required>
+        </div>
+
+        <div class="form-group">
+            <input type="text" class="form-control" id="FPLOGOBACKGROUNDCOLOR" placeholder="FPLOGOBACKGROUNDCOLOR" name="FPLOGOBACKGROUNDCOLOR" required>
+          </div>
+  
+          <div class="form-group">
+            <input type="text" class="form-control" id="FPLOGOFOREGROUNDCOLOR" placeholder="FPLOGOFOREGROUNDCOLOR" name="FPLOGOFOREGROUNDCOLOR" required>
+          </div>
+  
+          <div class="form-group">
+            <input type="text" class="form-control" id="VERSION" placeholder="VERSION" name="VERSION" required>
+          </div>
+  
+          <div class="form-group">
+            <input type="file" class="btn btn-warning" id="UPLOADLOGOIMAGE" name="UPLOADLOGOIMAGE" placeholder="UPLOADLOGOIMAGE">
+          </div>
+
+          <div style="text-align: center;"><button type="submit" class="btn btn-warning">Submit</button></div>
+
+      </form>
+  </body>
+</html>
