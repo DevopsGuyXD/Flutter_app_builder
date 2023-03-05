@@ -20,7 +20,7 @@
 
 <h4>Step 3: Triggers the flutter build</h4>
 
-![2023-02-20 01_06_35-DECCANSERAI_V1 · nowfloats_boost_msme_app_builder@978c2e4](https://user-images.githubusercontent.com/77780574/219971036-27b26761-7e92-4714-af66-684bb37bb1c5.png)
+![219971036-27b26761-7e92-4714-af66-684bb37bb1c5](https://user-images.githubusercontent.com/77780574/222962147-5638d512-d5ce-45f0-92b4-c9dbf729a008.png)
 
 <h4>Step 4: Flutter app generated</h4>
 
