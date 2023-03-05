@@ -12,7 +12,7 @@
 
 <h4>Step 1: Submit form</h4>
 
-![2023-02-20 01_02_43-Boost msme app builder](https://user-images.githubusercontent.com/77780574/219970853-c20340ca-1a1b-41de-b72d-13cee86eae50.png)
+![219970853-c20340ca-1a1b-41de-b72d-13cee86eae50](https://user-images.githubusercontent.com/77780574/222962027-30780a29-294b-4797-a62a-42617ca57004.png)
 
 <h4>Step 2: Form request picked up from Queue</h4>
 
