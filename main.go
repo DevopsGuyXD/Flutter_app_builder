@@ -11,6 +11,7 @@ import (
 	config "github.com/DevopsGuyXD/Bizapp/Configs"
 	router "github.com/DevopsGuyXD/Bizapp/Routers"
 	util "github.com/DevopsGuyXD/Bizapp/Utils"
+	"github.com/go-co-op/gocron"
 )
 
 var wg sync.WaitGroup
@@ -45,11 +46,17 @@ func GetGitRepo(){
 // ====================== Init =======================
 func init(){
 	
-	wg.Add(3)
+	s := gocron.NewScheduler(time.Local)
+
+	wg.Add(4)
 
 	go main()
 	go ProcessRequest()
 	go GetGitRepo()
+
+	s.Cron("00 06 * * *").Do(func(){
+		go util.GithubLogin()
+    })
 
 	wg.Wait()
 }

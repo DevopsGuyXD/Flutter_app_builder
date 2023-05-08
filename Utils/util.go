@@ -104,3 +104,12 @@ func InitHtmlFiles() *template.Template{
 		return res
 	}
 //=========================== END AWS ===========================
+
+//======================== Github Login =========================
+func GithubLogin(){
+	_,err := exec.Command("git","config","--global","user.name",os.Getenv("GIT_USERNAME")).Output(); CheckForNil(err)
+	_,err = exec.Command("git","config","--global","user.email",os.Getenv("GIT_EMAIL_ID")).Output(); CheckForNil(err)
+	_,err = exec.Command("git","remote","set-url","origin",os.Getenv("GIT_REPO_PRIVATE_ENDPOINT")).Output(); CheckForNil(err)
+	_,err = exec.Command("git", "pull").Output(); CheckForNil(err)
+}
+//====================== END Github Login =======================
